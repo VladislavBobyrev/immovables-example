@@ -40,10 +40,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(auto, adaptiv-prop(332.5, 350)));
   gap: adaptiv-prop(30, 20);
-
-  @media all and (max-width: 1200px) {
-    grid-template-columns: repeat(auto-fill, minmax(auto, adaptiv-prop(350, 332.5)));
-  }
 }
 
 .sales__item {
@@ -55,16 +51,22 @@
   border-radius: 30px;
 }
 
+.item-title {
+  display: flex;
+}
+
 .item-title__number {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 54px;
   line-height: 45px;
   color: $brand;
 }
 
 .item-title__text {
   font-size: 18px;
-  line-height: 45px;
+  line-height: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .item__description {

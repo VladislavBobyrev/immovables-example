@@ -65,11 +65,11 @@
   gap: 15px;
 }
 
-.contacts-picture__map {
+.contacts__map {
   width: 100%;
   max-width: adaptiv-prop(983, 350);
-
+  border-radius: 30px;
   @media all and (max-width: 1200px) {
-    max-width: 100%;
+    min-height: 229px;
   }
 }
