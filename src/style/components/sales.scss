@@ -1,0 +1,74 @@
+.sales {
+  display: flex;
+  flex-direction: column;
+  gap: adaptiv-prop(100, 50);
+
+  @media all and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 103px 30px;  
+  }
+}
+
+.sales__title {
+  font-weight: 600;
+  font-size: adaptiv-prop(38, 24);
+  line-height: adaptiv-prop(53, 32);
+  color: $text-main;
+  max-width: 547px;
+}
+
+
+
+.title-decor--sales::before {
+  bottom: adaptiv-prop(-30, -20);
+}
+
+.sales__description {
+  display: flex;
+  align-items: center;
+  max-width: 525px;
+  font-weight: 400;
+  font-size: adaptiv-prop(18, 14);
+  line-height: adaptiv-prop(29, 22);
+  color: $text-primary
+}
+
+.sales__list {
+  list-style: none;
+  grid-area: auto / span 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(auto, adaptiv-prop(332.5, 350)));
+  gap: adaptiv-prop(30, 20);
+
+  @media all and (min-width: 1200px) {
+    grid-template-columns: repeat(auto-fill, minmax(auto, adaptiv-prop(350, 332.5)));
+  }
+}
+
+.sales__item {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: adaptiv-prop(40, 30) 30px adaptiv-prop(40, 32);
+  background: $primary;
+  border-radius: 30px;
+}
+
+.item-title__number {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  color: $brand;
+}
+
+.item-title__text {
+  font-size: 18px;
+  line-height: 45px;
+}
+
+.item__description {
+  font-size: adaptiv-prop(15, 14);
+  line-height: adaptiv-prop(18, 16.7);
+  color: $text-secondary-400;
+}

@@ -1,0 +1,28 @@
+.banner__title {
+  font-style: normal;
+  font-weight: 600;
+
+  font-size: adaptiv-prop(60, 26);
+  line-height: adaptiv-prop(72, 31);
+  max-width: adaptiv-prop(688, 300);
+  color: $text-main;
+  margin-bottom: adaptiv-prop(30, 25);
+}
+
+.banner__descroption {
+  font-weight: 400;
+  font-size: adaptiv-prop(16, 14);
+  line-height: adaptiv-prop(29, 22);
+  max-width: 450px;
+  margin-bottom: adaptiv-prop(50, 40);
+}
+
+.banner__descroption--opacity{
+  opacity: 0.9;
+}
+
+.banner__button{
+  font-weight: 600;
+  font-size: adaptiv-prop(16, 14);
+  line-height: adaptiv-prop(19, 17);
+}

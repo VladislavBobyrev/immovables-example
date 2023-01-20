@@ -1,0 +1,42 @@
+.html{
+  overflow: hidden;
+}
+
+.page {
+  font-family: 'SF UI Text';
+  height: calc(var(--vh) * 100);
+  overflow: auto;
+}
+
+.page__wrapper {
+  margin: 0 adaptiv-prop(250, 20);
+}
+
+.page__block--primary{
+  background: $primary;
+  padding: adaptiv-prop(100, 50) 0;
+}
+
+.page__block--secondary{
+  background: $secondary;
+  padding: adaptiv-prop(120, 40) 0 adaptiv-prop(127, 40) ;
+}
+
+.page__text--color-secondary {
+  color: $text-secondary;
+}
+
+.page__text--color-primary {
+  color: $text-primary;
+}
+
+.page__block--decor {
+  @media all and (min-width: 1200px) {
+    background: url(../.././public/images/decor.png) no-repeat right 0% / auto auto;
+  }
+}
+
+
+.page__link{
+  text-decoration: none;
+}

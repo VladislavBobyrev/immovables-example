@@ -1,0 +1,11 @@
+.title-decor {
+  position: relative;
+}
+
+.title-decor::before {
+  content: '';
+  position: absolute;
+  width: 105px;
+  height: 3px;
+  background: $brand;
+}
