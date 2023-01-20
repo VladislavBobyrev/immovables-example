@@ -41,7 +41,7 @@
   grid-template-columns: repeat(auto-fill, minmax(auto, adaptiv-prop(332.5, 350)));
   gap: adaptiv-prop(30, 20);
 
-  @media all and (min-width: 1200px) {
+  @media all and (max-width: 1200px) {
     grid-template-columns: repeat(auto-fill, minmax(auto, adaptiv-prop(350, 332.5)));
   }
 }
